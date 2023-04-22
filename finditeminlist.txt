@@ -1,0 +1,15 @@
+from easygui import *
+
+combos = ['Ham and cheese', 'Tommy sause']
+price = [80, 60]
+
+find_item = enterbox('Enter the letter you want to find')
+
+indexofitem = combos.index(find_item)
+print(indexofitem)
+item = combos.pop(indexofitem)
+print(item)
+
+priceofitem = price.pop(indexofitem)
+
+
